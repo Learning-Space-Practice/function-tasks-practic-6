@@ -103,11 +103,10 @@ const t12 = max.bind(document.querySelector('.out-12'))
 t12(11,88)
 // Task 13
 // C помощью bind создайте частичную функцию t13, которая основана на функции max но контекст - out-13. Первый агрумент функции max должен быть заменен на 50.  Запустите эту функцию c числом 48.
-const t13 = max.bind(document.querySelector('.out-13'),50)
+const t13 = max.bind(document.querySelector('.out-13'),5)
 t13(48)
 // Task 14
 // С помощью bind создайте функцию t14, которая основана на t9, но в качестве контента задайте out-14. Запустите t14 передав ей как аргумент массив ar9.
 
-let t14 = t9.apply(document.querySelector('.out-14'),ar9)
-console.log()
-t14()
+let t14 = t9.bind(document.querySelector('.out-14'))
+t14(14,6)
