@@ -76,7 +76,8 @@ out8.textContent = Math.max.apply(null, ar8);
 
 let ar9 = [66,55,33,77,22,81,15];
 
-function t9(...arr) {
+function t9(arr) {
+    console.log(ar9)
     this.textContent = Math.max.apply(null, arr);
 }
 
@@ -109,4 +110,4 @@ t13(48)
 // С помощью bind создайте функцию t14, которая основана на t9, но в качестве контента задайте out-14. Запустите t14 передав ей как аргумент массив ar9.
 
 let t14 = t9.bind(document.querySelector('.out-14'))
-t14(14,6)
+t14(ar9)
